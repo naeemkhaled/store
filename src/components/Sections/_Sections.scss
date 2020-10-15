@@ -1,0 +1,33 @@
+.sctions {
+    padding-bottom: 50px;
+    .item-img-one{background: url(/images/banner_1.jpg) no-repeat}
+    .item-img-tow {background: url(/images/banner_2.jpg) no-repeat}
+    .item-img-three{background: url(/images/banner_3.jpg) no-repeat}
+    .banner_item {
+        height: 280px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .banner_category {
+            a {
+                color: #000;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 25px;
+                letter-spacing: 2px;
+                background-color: #FFF;
+                padding: 10px 32px;
+                transition: all 0.4s ease-in;
+                &:hover {
+                    color: #FFF;
+                    border: 1px solid #FFF;
+                    background: none;
+                }
+            }
+        }
+    }
+}
+
+// .item-img-tow , 

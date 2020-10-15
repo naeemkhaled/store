@@ -1,0 +1,48 @@
+.week {
+    background-color: #f2f2f2;
+    width: 100%;
+    margin-bottom: 50px;
+    .week-time {
+        display: block;
+        text-align: center;
+        margin-left: auto;
+        margin-top: 14%;
+        .week-title {
+            text-transform: capitalize;
+            margin-bottom: 4rem;
+            position: relative;
+            &::after {
+                position: absolute;
+                content: '';
+                width: 4rem;
+                height: 4px;
+                top: 3.4rem;
+                left: 14.5rem;
+                background-color: #fe4c50;
+            }
+        }
+        .time {
+            background-color: #FFF;
+            color: $fristColor;
+            padding: 20px 30px;
+            font-size: 20px;
+            font-weight: bold;
+            margin-right: 0.1rem;
+        }
+        .week-btn {
+            display: block;
+            margin: 4rem auto;
+            background-color: #1e1e27;
+            color: #FFF;
+            border: none;
+            border-radius: 4px;
+            text-transform: uppercase;
+            padding: 6px 28px;
+            cursor: pointer;
+            transition: all 0.4s ease-in;
+            &:hover {
+                background-color: #1e1e27ab;
+            }
+        }
+    }
+}

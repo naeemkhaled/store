@@ -1,0 +1,40 @@
+.list-dropdown-menu {
+    background-color: #FFF;
+    width: 5rem;
+    height: 10.5rem;
+    box-shadow: 0 0 25px rgba(63, 78, 100, 0.15);
+    opacity: 0;
+    transition: all 0.3s ease-in;
+    .link-drop {
+        padding: 0.4rem;
+        .list-item {
+            text-align: center;
+            display: block;
+            text-decoration: none;
+            color: #232530;
+            padding-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 0.5px;
+                background-color: $thirdColor;
+                top: 40px;
+                left: 0;
+            }
+            &:hover {
+                color: $thirdColor;
+            }
+            &:last-child {
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 0;
+                    height: 0;
+                }
+            }
+        }
+    }
+}

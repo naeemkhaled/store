@@ -1,0 +1,44 @@
+.footer {
+    ul {
+        padding: 0 0 0 0 ;
+        li {
+            display: inline-block;
+            a {
+                text-decoration: none;
+                color: #51545f;
+                margin-right: 3rem;
+                transition: all 0.4s ease-in;
+                &:hover {
+                    color: $fristColor;
+                }
+            }
+        }
+    }
+
+    .footer-icon {
+        a {
+            text-decoration: none;
+            i {
+                color: #51545f;
+                margin-left: 2rem;
+                transition: all 0.4s ease-in;
+                &:hover {
+                    color: $fristColor;
+                }
+            }
+        }
+    }
+
+    .footer-copy {
+        padding-top: 50px;
+        padding-bottom: 10px;
+        p {
+            margin-bottom: 0;
+            margin-left: 0;
+            i , span {
+                color: $fristColor;
+            }
+            
+        }
+    }
+}

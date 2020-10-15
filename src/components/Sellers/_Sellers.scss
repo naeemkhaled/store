@@ -1,0 +1,59 @@
+.sellers {
+    padding-bottom: 50px;
+    .sellers-title {
+        h2 {
+            letter-spacing: 2px;
+            margin-bottom: 5rem;
+            position: relative;
+            &::after{
+                position: absolute;
+                content: '';
+                top: 3rem;
+                left: 31.2rem;
+                background-color: #fe4c50;
+                width: 6%;
+                height: 0.3rem;
+            }
+        }
+    }
+
+        .product {
+            width: 20%;
+            border-right: 1px solid #ccc;
+            cursor: pointer;
+            margin-bottom: 50px;
+            &:nth-of-type(5) {border-right: none;}
+            &:last-child {border-right: none;}
+            &:hover {
+                box-shadow: 1px 3px  6px #ccc;
+                border: 1px solid #ccc;
+            }
+            &:hover > .product-icon {opacity: 1}
+            &:hover > .product-btn {opacity: 1;}
+
+            .product-icon{
+                margin-left: 1rem;
+                margin-top: 1rem;
+                transition: all 0.4s ease-in;
+                opacity: 0;
+                &:hover {
+                    color: $fristColor;
+                }
+            }
+            .product-decs {
+                &:hover {
+                    color: $thirdColor;
+                }
+            }
+            .product-price {
+                color: $fristColor;
+                margin-bottom: 1rem;
+                span {
+                    color: $thirdColor;
+                    text-decoration: line-through;
+                    font-size: 12px;
+                    margin-left: 0.7rem;
+                }
+            }
+        }
+}
